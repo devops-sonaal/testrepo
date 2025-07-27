@@ -1,11 +1,11 @@
 resource "azurerm_resource_group" "testexamplerg" {
-  name     = "exampledata-test-rg01"
+  name     = "resource_group_test01"
   location = "East US"
 }
 
 
 resource "azurerm_storage_account" "testexamplestorage" {
-  name                     = "databolexamplestorage1"
+  name                     = "hdmistorageaccount108"
   resource_group_name      = azurerm_resource_group.testexamplerg.name
   location                 = azurerm_resource_group.testexamplerg.location
   account_tier             = "Standard"
