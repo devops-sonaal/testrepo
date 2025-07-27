@@ -4,7 +4,7 @@ resource "azurerm_resource_group" "testexamplerg" {
 }
 
 resource "azurerm_storage_account" "rg01" {
-  name                     = "databolexamplestorage2"
+  name                     = "examplestoracc01"
   resource_group_name      = azurerm_resource_group.testexamplerg.name
   location                 = azurerm_resource_group.testexamplerg.location
   account_tier             = "Standard"
